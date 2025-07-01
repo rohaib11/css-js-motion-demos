@@ -1,0 +1,226 @@
+/* Keyframe Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes drawLogo {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(var(--primary), 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(var(--primary), 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(var(--primary), 0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes floatPyramid {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(5deg); }
+}
+
+@keyframes rotateCube {
+    0% { transform: translate(-50%, -50%) rotateX(0) rotateY(0); }
+    100% { transform: translate(-50%, -50%) rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes pulseSphere {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes flip {
+    0% { transform: perspective(400px) rotateY(0); }
+    50% { transform: perspective(400px) rotateY(180deg); }
+    100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Animation Classes */
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-rotate {
+    animation: rotate 2s infinite linear;
+}
+
+.animate-flip {
+    animation: flip 3s infinite;
+}
+
+.animate-shake {
+    animation: shake 0.5s infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate-slideUp {
+    animation: slideUp 1s ease forwards;
+}
+
+.animate-slideDown {
+    animation: slideDown 1s ease forwards;
+}
+
+.animate-slideLeft {
+    animation: slideLeft 1s ease forwards;
+}
+
+.animate-slideRight {
+    animation: slideRight 1s ease forwards;
+}
+
+/* Text Animation */
+.anim-text {
+    display: inline-block;
+    position: relative;
+}
+
+.anim-text::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: expandLine 2s infinite alternate;
+}
+
+@keyframes expandLine {
+    to { transform: scaleX(1); }
+}
+
+/* CSS Animation Demo Elements */
+.css-animation-box {
+    width: 300px;
+    height: 200px;
+    background-color: var(--bg-dark);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary);
+    border-radius: 8px;
+}
+
+/* Physics Demo Elements */
+.physics-container {
+    width: 300px;
+    height: 200px;
+    background-color: var(--bg-dark);
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.physics-ball {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.physics-obstacle {
+    width: 60px;
+    height: 20px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Page Transition Animations */
+.page-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}

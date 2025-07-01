@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Animations Showcase</title>
+    <meta name="description" content="Explore animation techniques across multiple programming languages and frameworks">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask">
+                <div class="loader-line"></div>
+            </div>
+            <svg class="preloader-logo" viewBox="0 0 200 200">
+                <path d="M100,0 C155.228,0 200,44.772 200,100 C200,155.228 155.228,200 100,200 C44.772,200 0,155.228 0,100 C0,44.772 44.772,0 100,0 Z" fill="none"></path>
+                <path class="logo-path" d="M100,0 C155.228,0 200,44.772 200,100 C200,155.228 155.228,200 100,200 C44.772,200 0,155.228 0,100 C0,44.772 44.772,0 100,0 Z" fill="none"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.svg" alt="Animations Showcase" width="180" height="40">
+                </a>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="pages/css-animations.html" class="nav-link">CSS</a>
+                    <a href="pages/js-animations.html" class="nav-link">JavaScript</a>
+                    <a href="pages/python-animations.html" class="nav-link">Python</a>
+                    <a href="pages/java-animations.html" class="nav-link">Java</a>
+                    <a href="pages/frameworks-animations.html" class="nav-link">Frameworks</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Explore the Art of</span>
+                    <span class="title-line anim-text">Animations</span>
+                </h1>
+                <p class="hero-subtitle">Discover how animations are implemented across different programming languages and frameworks with interactive examples and code snippets.</p>
+                <div class="hero-actions">
+                    <a href="#languages" class="btn btn-primary pulse">Get Started</a>
+                    <a href="#demo" class="btn btn-outline">View Demo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="animation-box">
+                    <div class="cube"></div>
+                    <div class="pyramid"></div>
+                    <div class="sphere"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section languages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Animation Technologies</h2>
+                <p class="section-subtitle">Explore different ways to create animations across various platforms</p>
+            </div>
+            
+            <div class="languages-grid">
+                <a href="pages/css-animations.html" class="language-card">
+                    <div class="card-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS Animations</h3>
+                    <p>Keyframes, transitions, transforms and more with pure CSS</p>
+                    <div class="hover-effect"></div>
+                </a>
+                
+                <a href="pages/js-animations.html" class="language-card">
+                    <div class="card-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript Animations</h3>
+                    <p>requestAnimationFrame, GSAP, and other JS animation techniques</p>
+                    <div class="hover-effect"></div>
+                </a>
+                
+                <a href="pages/python-animations.html" class="language-card">
+                    <div class="card-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Animations</h3>
+                    <p>Pygame, Tkinter, Matplotlib animations and more</p>
+                    <div class="hover-effect"></div>
+                </a>
+                
+                <a href="pages/java-animations.html" class="language-card">
+                    <div class="card-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java Animations</h3>
+                    <p>JavaFX, Android animations, and Swing animations</p>
+                    <div class="hover-effect"></div>
+                </a>
+                
+                <a href="pages/frameworks-animations.html" class="language-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Framework Animations</h3>
+                    <p>React, Vue, Angular and other framework animation systems</p>
+                    <div class="hover-effect"></div>
+                </a>
+                
+                <a href="#" class="language-card coming-soon">
+                    <div class="card-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>More Coming Soon</h3>
+                    <p>Stay tuned for more animation technologies</p>
+                    <div class="hover-effect"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="section demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interactive Demos</h2>
+                <p class="section-subtitle">Play with these interactive animation examples</p>
+            </div>
+            
+            <div class="demo-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="css-demo">CSS</button>
+                    <button class="tab-btn" data-tab="js-demo">JavaScript</button>
+                    <button class="tab-btn" data-tab="physics-demo">Physics</button>
+                </div>
+                
+                <div class="tab-content active" id="css-demo">
+                    <div class="demo-content">
+                        <div class="demo-visual">
+                            <div class="css-animation-box">
+                                <div class="animated-element"></div>
+                            </div>
+                            <div class="animation-controls">
+                                <button class="control-btn" data-animation="bounce">Bounce</button>
+                                <button class="control-btn" data-animation="pulse">Pulse</button>
+                                <button class="control-btn" data-animation="rotate">Rotate</button>
+                                <button class="control-btn" data-animation="flip">Flip</button>
+                                <button class="control-btn" data-animation="shake">Shake</button>
+                            </div>
+                        </div>
+                        <div class="demo-code">
+                            <pre><code class="language-css">/* CSS Animation Example */
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background: var(--primary);
+    border-radius: 8px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="js-demo">
+                    <div class="demo-content">
+                        <div class="demo-visual">
+                            <canvas id="jsAnimationCanvas" width="500" height="300"></canvas>
+                            <div class="animation-controls">
+                                <button class="control-btn" data-action="start">Start</button>
+                                <button class="control-btn" data-action="stop">Stop</button>
+                                <button class="control-btn" data-action="reset">Reset</button>
+                            </div>
+                        </div>
+                        <div class="demo-code">
+                            <pre><code class="language-javascript">// JavaScript Animation Example
+const canvas = document.getElementById('jsAnimationCanvas');
+const ctx = canvas.getContext('2d');
+let x = 50;
+let y = 150;
+let dx = 2;
+let dy = 2;
+let radius = 30;
+let animationId;
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fillStyle = '#4a6bff';
+    ctx.fill();
+    
+    if (x + radius > canvas.width || x - radius < 0) dx = -dx;
+    if (y + radius > canvas.height || y - radius < 0) dy = -dy;
+    
+    x += dx;
+    y += dy;
+    
+    animationId = requestAnimationFrame(draw);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="physics-demo">
+                    <div class="demo-content">
+                        <div class="demo-visual">
+                            <div class="physics-container" id="physicsDemo">
+                                <div class="physics-ball"></div>
+                                <div class="physics-obstacle"></div>
+                            </div>
+                            <div class="animation-controls">
+                                <button class="control-btn" data-action="gravity">Gravity</button>
+                                <button class="control-btn" data-action="collision">Collision</button>
+                                <button class="control-btn" data-action="spring">Spring</button>
+                            </div>
+                        </div>
+                        <div class="demo-code">
+                            <pre><code class="language-javascript">// Physics Animation Example
+const ball = document.querySelector('.physics-ball');
+const container = document.querySelector('.physics-container');
+let yPos = 0;
+let velocity = 0;
+const gravity = 0.2;
+const damping = 0.8;
+let isAnimating = false;
+
+function applyPhysics() {
+    velocity += gravity;
+    yPos += velocity;
+    
+    // Check for collision with bottom
+    if (yPos >= container.clientHeight - ball.clientHeight) {
+        yPos = container.clientHeight - ball.clientHeight;
+        velocity = -velocity * damping;
+        
+        // Stop animation when velocity is very small
+        if (Math.abs(velocity) < 0.5) {
+            cancelAnimationFrame(animationId);
+            isAnimating = false;
+            return;
+        }
+    }
+    
+    ball.style.transform = `translateY(${yPos}px)`;
+    animationId = requestAnimationFrame(applyPhysics);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Learn Animations?</h2>
+                <p class="section-subtitle">Animations enhance user experience and bring interfaces to life</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Engagement</h3>
+                    <p>Well-designed animations capture user attention and make interactions more engaging.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Guidance</h3>
+                    <p>Animations can guide users through your application's workflow and hierarchy.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Delight</h3>
+                    <p>Subtle animations create moments of delight that improve overall user satisfaction.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Feedback</h3>
+                    <p>Provide immediate visual feedback for user actions to improve perceived performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter to get notified about new animation techniques, tutorials, and resources.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <div class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Animations Showcase</h3>
+                    <p>Exploring the art and science of animations across different programming languages and frameworks.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#demo">Demos</a></li>
+                        <li><a href="#languages">Technologies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Cheatsheets</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> contact@animationshowcase.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Animation St, San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Animations Showcase. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/page-transitions.js"></script>
+</body>
+</html>
